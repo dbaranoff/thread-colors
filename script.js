@@ -673,12 +673,12 @@
 
   const layout = root.removeChild(el);
 
-  root.append(/*root.querySelector('h1'),*/ ...threads.map(({ brand, code, hexCode }) => {
+  root.append(...threads.map(({ brand, code, hexCode }) => {
     const clone = layout.cloneNode(true);
 
     clone.querySelector('.name').innerHTML = brand;
-    clone.querySelector('.code').innerHTML = code;
-    clone.querySelector('.color').innerHTML = hexCode;
+    clone.querySelector('.code').innerHTML = `Code: <strong>${code}</strong>`;
+    clone.querySelector('.color').innerHTML = `HEX: <strong>${hexCode}</strong>`;
     clone.querySelector('.example').style.backgroundColor = hexCode;
 
     return clone;
