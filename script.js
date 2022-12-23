@@ -665,6 +665,11 @@
       'code': '9220',
       'hexCode': '#F7E6CE',
     },
+    {
+      'brand': 'Pantone Matching System',
+      'code': 'White',
+      'hexCode': '#FFFFFF',
+    },
   ];
 
   const root = document.getElementById('root');
