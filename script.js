@@ -670,6 +670,11 @@
       'code': 'White',
       'hexCode': '#FFFFFF',
     },
+    {
+      'brand': 'Pantone Matching System',
+      'code': 'Dark black',
+      'hexCode': '#000000',
+    },
   ];
 
   const root = document.getElementById('root');
